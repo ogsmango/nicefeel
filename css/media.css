@@ -1,0 +1,382 @@
+@media (max-width: 1199px) {
+    .header__menu {
+        display: none;
+    }
+
+    .menu__item {
+        font-size: 18px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+        z-index: 20;
+    }
+
+    .logo-wrapper {
+        padding-top: 10px;
+    }
+    
+    .swiper-button-prev {
+        left: 10px;
+    }
+    
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .advantages,
+    .irrigator {
+        padding-top: 90px;
+    }
+
+    .benefits,
+    .catalogue,
+    .versus,
+    .certificates,
+    .map,
+    .questions {
+        padding-top: 120px;
+    }
+
+    .questions {
+        padding-bottom: 120px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero__img {
+        max-width: none;
+    }
+
+    .footer__container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero__main-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__features {
+        padding: 20px;
+    }
+
+    .advantages__img {
+        width: 100%;
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    .irrigator__info {
+        padding: 30px 60px;
+    }
+
+    .versus__title-text,
+    .certificates__title-text,
+    .questions__title-text,
+    .catalogue__title-text {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .title-text {
+        margin-bottom: 40px;
+    }
+
+    .why__item {
+        margin-bottom: 25px;
+        padding-right: 0;
+        background-position-x: 15px;
+    }
+
+    .advantages,
+    .irrigator {
+        padding-top: 70px;
+    }
+
+    .benefits,
+    .catalogue,
+    .versus,
+    .certificates,
+    .map,
+    .questions {
+        padding-top: 100px;
+    }
+
+    .questions {
+        padding-bottom: 100px;
+    }
+
+    .versus__list {
+        padding: 30px 60px 60px;
+    }
+
+    .versus__mob-name {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .versus__item {
+        padding: 20px 0 20px;
+        height: auto;
+    }
+    
+    .faq-page {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .footer__nav {
+        display: block;
+    }
+
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__container {
+        justify-content: center;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        text-align: left;
+    }
+
+    .hero__feature-text {
+        width: 100%;
+    }
+
+    .hero__feature {
+        align-items: center;
+    }
+
+    .hero__feature:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+    .hero__main-img {
+        margin-top: 20px;
+    }
+
+    .hero__img {
+        width: 50%;
+    }
+
+    .advantages,
+    .irrigator {
+        padding-top: 40px;
+    }
+
+    .benefits,
+    .catalogue,
+    .versus,
+    .certificates,
+    .map,
+    .questions {
+        padding-top: 70px;
+    }
+
+    .questions {
+        padding-bottom: 70px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .catalogue__info-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .catalogue__info-item {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .irrigator__wrapper {
+        background-image: none;
+    }
+
+    .contacts {
+        margin-top: 70px;
+    }
+
+    .why {
+        margin-top: 70px;
+        background: none;
+    }
+
+    .map__google-map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    p,
+    .hero__text,
+    .hero__feature-text {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+    }
+    
+    .hero__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero__info {
+        padding-top: 30px;
+    }
+
+    .main-btn {
+        display: block;
+        padding: 16px 26px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .benefits {
+        text-align: left;
+    }
+
+    .benefits__item-img {
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .benefits__item {
+        margin-bottom: 30px;
+    }
+
+    .benefits__item-title,
+    .advantages__item-title,
+    .why__item-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .advantages__item-title,
+    .advantages__item-text {
+        padding-right: 0;
+    }
+
+    .advantages__item-img-wrapper {
+        margin-bottom: 20px;
+        height: 160px;
+    }
+
+    .advantages {
+        text-align: left;
+    }
+
+    .catalogue__title,
+    .why__title,
+    .versus__title,
+    .contacts__title {
+        margin-bottom: 10px;
+    }
+
+    .title-text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 14px;
+    }
+
+    .irrigator__info {
+        padding: 30px 15px;
+    }
+
+    .irrigator,
+    .irrigator__title {
+        text-align: left;
+    }
+
+    .irrigator__btn {
+        text-align: center;
+    }
+
+    .why {
+        text-align: left;
+    }
+
+    .title-text {
+        text-align: left;
+    }
+
+    .versus__list {
+        padding: 30px 10px 30px;
+    }
+    
+    .versus__mob-name {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .versus__item-col {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .contacts {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: none;
+    }
+
+    .contacts__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .contacts__form {
+        margin-bottom: 30px;
+    }
+
+    .faq-page {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .faq-page-span {
+        max-width: 80%;
+    }
+}

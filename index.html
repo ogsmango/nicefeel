@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicefeel</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container header__menu">
+                <a href="" class="logo header__logo">
+                    <img src="img/logo.png" alt="" class="header__logo-img">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Виды ирригаторов</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Характеристики</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Консультация</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Популярные вопросы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+77273102149" class="header__tel">
+                    <span class="header__tel-icon"></span>
+                    +7 (727) 310-21-49
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="logo-wrapper d-flex justify-content-center">
+                    <a href="" class="logo header__logo">
+                        <img src="img/logo.png" alt="" class="header__logo-img">
+                    </a>
+                </div>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Виды ирригаторов</a></li>
+                    <li><a class="menu__item" href="#">Характеристики</a></li>
+                    <li><a class="menu__item" href="#">Команда</a></li>
+                    <li><a class="menu__item" href="#">Консультация</a></li>
+                    <li><a class="menu__item" href="#">Популярные вопросы</a></li>
+                    <li><a class="menu__item" href="tel:+77273102149">+7 (727) 310-21-49</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-12 hero__info">
+                        <h1 class="hero__title">
+                            Ирригаторы Nicefeel - лучшее решение для полости рта
+                        </h1>
+                        <p class="hero__text">
+                            Мы используем самые новые и безопасные технологии, чтобы ваша полость рта оставалась чистой
+                            и здоровой
+                        </p>
+                        <button type="button" class="main-btn hero__btn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Получить консультацию
+                        </button>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12 hero__main-img">
+                        <img class="hero__img" src="img/main.png" alt="">
+                    </div>
+                </div>
+                <div class="row hero__features">
+                    <div class="col-md-4 col-12 hero__feature">
+                        <img class="hero__feature-icon" src="img/check.svg" alt="">
+                        <p class="hero__feature-text">
+                            Бережная чистка десен без повреждений
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 hero__feature">
+                        <img class="hero__feature-icon" src="img/check.svg" alt="">
+                        <p class="hero__feature-text">
+                            Тщательная чистка зубов, имплантов и брекетов
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 hero__feature">
+                        <img class="hero__feature-icon" src="img/check.svg" alt="">
+                        <p class="hero__feature-text">
+                            Большой выбор индивидуальных насадок
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container benefits__container">
+                <h2 class="title benefits__title">
+                    Ирригаторы Nicefeel - это:
+                </h2>
+                <div class="row benefits__list">
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Rocket.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Высокая мощность
+                        </h3>
+                        <p class="benefits__item-text">
+                            Мощность ирригаторов Nicefeel достигает 690 кПа. Это один из лучших показателей на рынке
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Noise.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Низкий уровень шума
+                        </h3>
+                        <p class="benefits__item-text">
+                            Шум ирригаторов Nicefeel не достигает 50 Дб. Это меньше, чем шум от спокойного разговора
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Mode.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Множество режимов
+                        </h3>
+                        <p class="benefits__item-text">
+                            Переключение режимов обеспечит компортную чистку для вас и ваших родных
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Nozzle.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Множество насадок
+                        </h3>
+                        <p class="benefits__item-text">
+                            Насадки помогут индивидуально подойти к вашей ротовой полости, обеспечат глубокую очистку,
+                            даже в случае с брекет-системами
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Eco.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Эко-материалы
+                        </h3>
+                        <p class="benefits__item-text">
+                            Насадка и резервуар для воды не содержат токсичных матералов. Они полностью безопасны
+                            даже для маленьких детей и беременных женщин
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 benefits__item">
+                        <img class="benefits__item-img" src="img/Warranty.svg" alt="">
+                        <h3 class="benefits__item-title">
+                            Гарантия на товар
+                        </h3>
+                        <p class="benefits__item-text">
+                            Гарантийное обслуживание ирригаторов Nicefeel выполняется быстро и бесплатно. Гарантия
+                            покрывает любые виды ремонта и обсуживания!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container advantages__container">
+                <h2 class="title advantages__title">
+                    Ирригаторы Nicefeel идеально подойдут, если вы:
+                </h2>
+                <div class="row advantages__list">
+                    <div class="col-lg-6 col-12 advantages__item">
+                        <div class="advantages__item-img-wrapper">
+                            <img class="advantages__img" src="img/pic-1.jpg" alt="">
+                        </div>
+                        <h3 class="advantages__item-title">
+                            Хотите сохранять ротовую полость максимально здоровой
+                        </h3>
+                        <p class="advantages__item-text">
+                            Обычная зубная щетка может очистить только доступные поверхности ротовой полости. В свою
+                            очередь иррегатор, благодаря тонкой струе воды, проникает между зубами, в пародонтальные
+                            карманы, освобождая рот от опасных бактерий, налета и остатков пищи.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-12 advantages__item">
+                        <div class="advantages__item-img-wrapper">
+                            <img class="advantages__img" src="img/pic-2.jpg" alt="">
+                        </div>
+                        <h3 class="advantages__item-title">
+                            Носите брекет-системы, импланты или другие подобные конструкции
+                        </h3>
+                        <p class="advantages__item-text">
+                            Ирригатор подает тонкую струю воды под высоким давлением, за счет чего помогает избавиться
+                            от налета и остатков пищи вокруг протезов, брекетов или имплантов. Очищение ирригатором
+                            более эффективное, чем щеткой, и занимает всего пару минут.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalogue">
+            <div class="container catalogue__container">
+                <h2 class="title catalogue__title">
+                    Каталог товаров
+                </h2>
+                <p class="catalogue__title-text title-text">
+                    Выберете ваш идеальный иррегатор
+                </p>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Ирригаторы</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Портативные
+                            ирригаторы</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row">
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                            <div class="catalogue__item col-lg-4 col-sm-6">
+                                <div class="catalogue__img-wrapper">
+                                    <img class="catalogue__img" src="img/pic-catalogue.jpg" alt="">
+                                </div>
+                                <div class="catalogue__info">
+                                    <h3 class="catalogue__info-title">
+                                        Ирригатор полости рта Nicefeel FC1592 White
+                                    </h3>
+                                    <ul class="catalogue__info-list">
+                                        <li class="catalogue__info-item">Количество импульсов: <br>1 400 - 1 800 в
+                                            минуту</li>
+                                        <li class="catalogue__info-item">Количество насадок: 2</li>
+                                        <li class="catalogue__info-item">Аккумулятор: Li-Ion 1400 mAh</li>
+                                    </ul>
+                                    <a class="catalogue__info-more" href="#">Подробнее о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="irrigator">
+            <div class="container irrigator__container">
+                <div class="row irrigator__wrapper">
+                    <div class="col-md-8 irrigator__info">
+                        <h2 class="title irrigator__title">
+                            Подберите ирригатор индивидуально под себя
+                        </h2>
+                        <p class="irrigator__text">
+                            Очень важно подобрать ирригатор, подходящий именно для вашей ротовой полости. Чтобы получить
+                            детальную консультацию, заполните форму. Практикующий врач-стоматолог свяжется с вами
+                            и подскажет самый оптимальный вариант!
+                        </p>
+                        <a class="main-btn irrigator__btn" href="#">
+                            Получить консультацию
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container why__container">
+                <h2 class="why__title title">
+                    Почему стоит использовать ирригатор?
+                </h2>
+                <p class="why__title-text title-text">
+                    Используя ирригатор, вы решаете сразу 6 болезненных проблем!
+                </p>
+                <div class="row why__list">
+                    <div class="col-lg-6 col-md-10 why__item why__item-1">
+                        <h3 class="why__item-title">
+                            Ирригаторы более тчательно удаляют остатки пищи и налёт в ротовой полости
+                        </h3>
+                        <p class="why__item-text">
+                            Глубокое учищение помогает предотвратить множество болезней ротовой полости, в том числе
+                            проблемы с дёснами.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-10 why__item why__item-2">
+                        <h3 class="why__item-title">
+                            Ирригаторы промывают труднодоступные места у людей с имплантами, коронками, протезами
+                        </h3>
+                        <p class="why__item-text">
+                            Таким образом все ротовая полость остаётся чистой, ирригатор способен сделать чистку там,
+                            где это не сделает обычная зубная щётка
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-10 why__item why__item-3">
+                        <h3 class="why__item-title">
+                            Ирригатор уменьшает риск неприятного запаха изо рта
+                        </h3>
+                        <p class="why__item-text">
+                            Это достигается за счёт более глубокой очистке, уменьшает количество вредных бактерий
+                            и не даёт им интенсивно размножаться
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-10 why__item why__item-4">
+                        <h3 class="why__item-title">
+                            Ирригатор — это хорошая альтернатива зубной нити
+                        </h3>
+                        <p class="why__item-text">
+                            Особенно это актуально для пожилых людей и людей с ограниченной подвижностью,
+                            так как пользование ирригатора не требует времени или физических усилий.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-10 why__item why__item-5">
+                        <h3 class="why__item-title">
+                            Ирригаторы улучшают общее состояние ротовой полости
+                        </h3>
+                        <p class="why__item-text">
+                            Неприятный запах изо рта, болезни зубов и десен можно предотвратить, тчательно очищая вашу
+                            ротовую полость. А гидромассаж поможет улучшить кровоток!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-10 why__item why__item-6">
+                        <h3 class="why__item-title">
+                            Ирригатор — это доступное средство, которое по карману каждому
+                        </h3>
+                        <p class="why__item-text">
+                            Вопреки стереотипам, ирригатор не требует вложения значительных средств. При этом пользу от
+                            его использования вы можете ощутить практически сразу.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="versus">
+            <div class="container versus__container">
+                <h2 class="title versus__title">
+                    Чистка с ирригатором <span class="main-green">vs.</span><br>Чистка традиционным способом
+                </h2>
+                <p class="versus__title-text title-text">
+                    Ирригатор дает массу преимуществ, по сравнению с обычной зубной щеткой
+                </p>
+                <div class="versus__list">
+                    <div class="row versus__item versus__item-main">
+                        <div class="col-lg-7 col-12 versus__mob-name">УХОД ЗА РОТОВОЙ ПОЛОСТЬЮ</div>
+                        <div class="col-lg-2 col-6 versus__item-col">ИРРИГАТОР</div>
+                        <div class="col-lg-3 col-6 versus__item-col">ЗУБНАЯ ЩЕТКА</div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Ежедневная очистка полости рта</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Доступность и относительно невысокая цена</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Улучшение общего состояния ротовой полости</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Удаление остатков пищи с труднодоступных мест
+                        </div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Гидромассаж, который улучшает кровоток в мягких
+                            тканях</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Очистка труднодоступных мест у людей с имплантами,
+                            брекетами, коронками
+                            или протезами</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row versus__item">
+                        <div class="col-lg-7 col-12 versus__mob-name">Минимизация неприятного запаха изо рта</div>
+                        <div class="col-lg-2 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/check.svg" alt="">
+                        </div>
+                        <div class="col-lg-3 col-6 versus__item-col">
+                            <img class="versus__item-icon" src="img/error.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="certificates">
+            <div class="container certificates__container">
+                <h2 class="title certificates__title">
+                    Сертификаты продукции Nicefeel
+                </h2>
+                <p class="certificates__title-text title-text">
+                    Наша продукция имеет множество сертификатов, подтверждающих качество
+                </p>
+                <div class="certificates__swiper-wrapper">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="certificates__swiper-img" src="img/pic-cert.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="certificates__swiper-img" src="img/pic-cert.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="certificates__swiper-img" src="img/pic-cert.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="certificates__swiper-img" src="img/pic-cert.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container map__container">
+                <h2 class="title map__title">
+                    Посмотрите ирригаторы вживую и получите консультацию врача
+                </h2>
+                <p class="map__title-text title-text">
+                    Вы можете получить личную консультацию врача и посмотерть все варианты ирригаторов в
+                    стоматологической клинике по адресу:
+                </p>
+                <p class="map__adress title-text">
+                    <span class="map__geo-icon"></span>
+                    г. Нур-Султан, ул. Сатпаева, 33
+                </p>
+                <iframe class="map__google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11907.874720879685!2d71.47477315958565!3d51.13940758318614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245815f88b272c7%3A0x20fe94840904a682!2z0YPQuy4g0KHQsNGC0L_QsNC10LLQsCAzMywg0J3Rg9GALdCh0YPQu9GC0LDQvSAwMTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sua!4v1654521266744!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container contacts__container">
+                <div class="row">
+                    <div class="contacts__wrapper col-lg-6 col-md-10 col-12 offset-lg-1">
+                        <h2 class="contacts__title title">
+                            Вам нужна помощь?
+                        </h2>
+                        <p class="contacts__text">
+                            Решили оформить заказ? Или хотите проконсультироваться? Заполните ниже и мы свяжемся с вами
+                            в ближайшее время!
+                        </p>
+                        <form action="" class="contacts__form">
+                            <div class="inputBox">
+                                <input class="contacts__input" type="text" name="" required="required">
+                                <span>Ваше имя</span>
+                            </div>
+                            <div class="inputBox">
+                                <input class="contacts__input" type="tel" name="" required="required">
+                                <span>Ваш номер телефона</span>
+                            </div>
+                            <button class="contacts__btn" type="submit">
+                                Отправить запрос
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contacts__wrapper col-lg-7 offset-lg-1">
+                        <h3 class="contacts__testimonial">
+                            Или свяжитесь с нами напрямую
+                        </h3>
+                        <p class="contacts__text">
+                            Наши телефоны всегда доступны! Также вы можете связаться с нами через социальные сети
+                        </p>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__tel-icon"></span>
+                                +7 (727) 310-21-49
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__tel-icon"></span>
+                                +7 (727) 310-21-49
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__tel-icon"></span>
+                                +7 (727) 310-21-49
+                            </li>
+                        </ul>
+                        <ul class="contacts__social-list">
+                            <li class="contacts__social-item">
+                                <a class="contacts__social-link" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM22.0853 20.8785V31.7596H17.5832V20.8789H15.334V17.1293H17.5832V14.878C17.5832 11.819 18.8533 10 22.4616 10H25.4657V13.7501H23.588C22.1833 13.7501 22.0904 14.2741 22.0904 15.2521L22.0853 17.1288H25.487L25.0889 20.8785H22.0853Z"
+                                            fill="#019673" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="contacts__social-item">
+                                <a class="contacts__social-link" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20ZM16.3326 29.1667L16.6728 24.0685L16.6726 24.0683L25.9467 15.6992C26.3537 15.3379 25.8578 15.1618 25.3175 15.4894L13.872 22.7103L8.92812 21.1672C7.86047 20.8403 7.8528 20.1067 9.16782 19.5792L28.4328 12.1507C29.3127 11.7512 30.162 12.362 29.8261 13.7087L26.5452 29.1692C26.3161 30.2679 25.6523 30.5306 24.7326 30.0232L19.7348 26.3308L17.3326 28.6667C17.325 28.674 17.3174 28.6814 17.3099 28.6887C17.0413 28.9502 16.819 29.1667 16.3326 29.1667Z"
+                                            fill="#019673" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="contacts__social-item">
+                                <a class="contacts__social-link" href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM15.6034 9.3977C16.7412 9.34592 17.1047 9.33325 20.0016 9.33325H19.9983C22.8961 9.33325 23.2583 9.34592 24.3961 9.3977C25.5317 9.4497 26.3073 9.62948 26.9873 9.89326C27.6895 10.1655 28.2828 10.5299 28.8762 11.1233C29.4695 11.7162 29.834 12.3113 30.1073 13.0128C30.3695 13.6911 30.5495 14.4662 30.6029 15.6018C30.654 16.7396 30.6673 17.1031 30.6673 20C30.6673 22.8969 30.654 23.2596 30.6029 24.3974C30.5495 25.5325 30.3695 26.3079 30.1073 26.9863C29.834 27.6877 29.4695 28.2828 28.8762 28.8757C28.2835 29.469 27.6893 29.8344 26.9879 30.1068C26.3093 30.3706 25.5333 30.5504 24.3977 30.6024C23.2599 30.6541 22.8975 30.6668 20.0003 30.6668C17.1036 30.6668 16.7403 30.6541 15.6025 30.6024C14.4671 30.5504 13.6918 30.3706 13.0131 30.1068C12.312 29.8344 11.7169 29.469 11.1242 28.8757C10.5311 28.2828 10.1667 27.6877 9.89399 26.9861C9.63043 26.3079 9.45065 25.5328 9.39843 24.3972C9.34687 23.2594 9.33398 22.8969 9.33398 20C9.33398 17.1031 9.34732 16.7393 9.39821 15.6015C9.44932 14.4664 9.62932 13.6911 9.89377 13.0126C10.1671 12.3113 10.5316 11.7162 11.1249 11.1233C11.7178 10.5302 12.3129 10.1657 13.0145 9.89326C13.6927 9.62948 14.4678 9.4497 15.6034 9.3977ZM19.9991 15.5557C22.4536 15.5557 24.4436 17.5454 24.4436 20.0001C24.4436 22.4546 22.4536 24.4446 19.9991 24.4446C17.5444 24.4446 15.5547 22.4546 15.5547 20.0001C15.5547 17.5454 17.5444 15.5557 19.9991 15.5557ZM26.6675 14.4444C26.6675 13.8307 26.17 13.3333 25.5564 13.3333C24.9427 13.3333 24.4453 13.8307 24.4453 14.4444C24.4453 15.058 24.9427 15.5555 25.5564 15.5555C26.17 15.5555 26.6675 15.058 26.6675 14.4444Z"
+                                            fill="#019673" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="questions__container container">
+                <h2 class="title questions__title">
+                    Чаще всего нас спрашивают
+                </h2>
+                <p class="questions__title-text title-text">
+                    Что-то осталось непонятным? Мы ответим на самые популярные вопросы!
+                </p>
+                <div class="questions__faq-container">
+                    <hr class="hr-line">
+                    <div class="questions__faq faq-one">
+                        <h3 class="faq-page">
+                            <span class="faq-page-span">Сколько стоит доставка ирригатора в мой регион?</span>
+                            <svg class="questions__plus-icon" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H14V14H0V16H14V30H16V16H30V14H16V0Z" fill="#019673" />
+                            </svg>
+                        </h3>
+                        <div class="faq-body col-lg-8 col-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sapiente repellendus!
+                                Cumque quia fugiat, corporis nam quisquam alias eum, in nihil doloremque, nostrum omnis
+                                optio ducimus quis delectus provident recusandae?</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="questions__faq faq-two">
+                        <h3 class="faq-page">
+                            <span class="faq-page-span">Как осуществляется доставка ирригаторов?</span>
+                            <svg class="questions__plus-icon" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H14V14H0V16H14V30H16V16H30V14H16V0Z" fill="#019673" />
+                            </svg>
+                        </h3>
+                        <div class="faq-body col-lg-8 col-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sapiente repellendus!
+                                Cumque quia fugiat, corporis nam quisquam alias eum, in nihil doloremque, nostrum omnis
+                                optio ducimus quis delectus provident recusandae?</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="questions__faq faq-three">
+                        <h3 class="faq-page">
+                            <span class="faq-page-span">Как выбрать ирригатор, чтобы он подошел мне?</span>
+                            <svg class="questions__plus-icon" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H14V14H0V16H14V30H16V16H30V14H16V0Z" fill="#019673" />
+                            </svg>
+                        </h3>
+                        <div class="faq-body col-lg-8 col-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sapiente repellendus!
+                                Cumque quia fugiat, corporis nam quisquam alias eum, in nihil doloremque, nostrum omnis
+                                optio ducimus quis delectus provident recusandae?</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="questions__faq faq-four">
+                        <h3 class="faq-page">
+                            <span class="faq-page-span">Меня будут консультировать только профессиональные
+                                стоматологи?</span>
+                            <svg class="questions__plus-icon" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H14V14H0V16H14V30H16V16H30V14H16V0Z" fill="#019673" />
+                            </svg>
+                        </h3>
+                        <div class="faq-body col-lg-8 col-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sapiente repellendus!
+                                Cumque quia fugiat, corporis nam quisquam alias eum, in nihil doloremque, nostrum omnis
+                                optio ducimus quis delectus provident recusandae?</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="questions__faq faq-five">
+                        <h3 class="faq-page">
+                            <span class="faq-page-span">Как мне быть уверенным, что вы не продаете подделки?</span>
+                            <svg class="questions__plus-icon" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H14V14H0V16H14V30H16V16H30V14H16V0Z" fill="#019673" />
+                            </svg>
+                        </h3>
+                        <div class="faq-body col-lg-8 col-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sapiente repellendus!
+                                Cumque quia fugiat, corporis nam quisquam alias eum, in nihil doloremque, nostrum omnis
+                                optio ducimus quis delectus provident recusandae?</p>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                </div>
+                <div class="questions__btn-wrapper">
+                    <button type="button" class="main-btn questions__btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Получить консультацию
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="w-100 row align-items-center">
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a class="py-3 mr-3 mr-md-5 logo footer__logo" href="#"><img src="img/logo-white.png" alt="" class="footer__logo-img"></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a class="py-3 mr-3 mr-md-5 footer__nav-link" href="#">Виды ирригаторов</a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a class="py-3 mr-3 mr-md-5 footer__nav-link" href="#">Характеристики</a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a class="py-3 mr-3 mr-md-5 footer__nav-link" href="#">Консультация</a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a class="py-3 mr-3 mr-md-5 footer__nav-link" href="#">Популярные вопросы</a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer py-2">
+                    <a href="tel:+77273102149" class="py-3 mr-3 mr-md-5 footer__tel"><span class="footer__tel-icon"></span>+7 (727) 310-21-49</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-wrapper">
+                        <h2 class="modal__title title">
+                            Вам нужна помощь?
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="contacts__text">
+                        Решили оформить заказ? Или хотите проконсультироваться? Заполните ниже и мы свяжемся с вами
+                        в ближайшее время!
+                    </p>
+                    <form action="" class="modal__form">
+                        <div class="inputBox">
+                            <input class="contacts__input" type="text" name="" required="required">
+                            <span>Ваше имя</span>
+                        </div>
+                        <div class="inputBox">
+                            <input class="contacts__input" type="tel" name="" required="required">
+                            <span>Ваш номер телефона</span>
+                        </div>
+                        <button class="contacts__btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#submitModal">
+                            Отправить запрос
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-wrapper">
+                        <h2 class="modal__title title">
+                            Спасибо, заявка успешно отправлена!
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="contacts__text">
+                        Скоро наш специалист свяжется с вами. Обычно это занимает не больше 10 минут.
+                    </p>
+                    <a href="index.html" class="modal__btn">
+                        Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+
+</html>
